@@ -1,22 +1,21 @@
 import React from "react";
+import { ActivitiesTimeline } from "../components/ui/TimeLineAbout";
 
 const About = () => {
   return (
     <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        possimus dolores consequatur molestias eos quae reiciendis ipsa nam,
-        tempore est, doloribus accusamus voluptas quidem eius quisquam
-        laudantium ipsam. Optio quasi alias tempore atque in autem inventore eum
-        itaque doloribus quam expedita, asperiores dolorem velit iste
-        accusantium sint. Perspiciatis voluptatum pariatur veniam provident
-        aliquid velit nemo tempora nulla. Quis sunt voluptate necessitatibus
-        saepe tempora accusantium quasi hic aliquam excepturi reiciendis
-        deleniti exercitationem aperiam vel rerum quibusdam temporibus eveniet
-        totam ipsam, officiis earum itaque! Beatae, molestias? Perferendis
-        pariatur dolor a fugit maxime possimus sequi temporibus alias labore
-        repellendus, aliquid quaerat quisquam corporis.
-      </p>
+      <div className="text-center my-4 ">
+        <h1 className="text-3xl p-4">
+          Fitne<span className="text-app-primary font-bold">zz</span>
+        </h1>
+        <p className=" text-xl p-4">
+          Somos una empresa que ofrece programas de salud integral{" "}
+        </p>
+        <h2 className="font-Poppins text-app-primary">Nuestros servicios</h2>
+      </div>
+      <div className="flex justify-center items-center">
+        <ActivitiesTimeline />
+      </div>
     </div>
   );
 };
