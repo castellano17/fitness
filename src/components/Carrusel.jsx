@@ -19,21 +19,60 @@ export function CarouselCustomNavigation() {
           </div>
         )}
       >
-        <img
-          src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-          alt="image 1"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-          alt="image 2"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        />
+        <div className="relative h-full">
+          <img
+            src="/imagen/fitness.jpg"
+            alt="fitness"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 mt-36 ">
+            <div className="bg-app-primary-accent bg-opacity-70 flex items-center justify-center flex-col ">
+              <span className="text-black text-xl font-bol">Fitness</span>
+              <span className="text-black text-sm ">Tonifica tus músculos</span>
+            </div>
+          </div>
+        </div>
+        <div className="relative h-full">
+          <img
+            src="/imagen/hiit.jpg"
+            alt="hiit"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 mt-36 ">
+            <div className="bg-app-primary-accent bg-opacity-70 flex items-center justify-center flex-col ">
+              <span className="text-black text-xl font-bol">Hitt</span>
+              <span className="text-black text-sm ">Ponte en forma</span>
+            </div>
+          </div>
+        </div>
+        <div className="relative h-full">
+          <img
+            src="/imagen/yoga.jpg"
+            alt="yoga"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 mt-36 ">
+            <div className="bg-app-primary-accent bg-opacity-70 flex items-center justify-center flex-col ">
+              <span className="text-black text-xl font-bol">Yoga</span>
+              <span className="text-black text-sm ">Cuida tu mente</span>
+            </div>
+          </div>
+        </div>
+        <div className="relative h-full">
+          <img
+            src="/imagen/hipopresivos.jpg"
+            alt="hipopresivos"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 mt-36 ">
+            <div className="bg-app-primary-accent bg-opacity-70 flex items-center justify-center flex-col ">
+              <span className="text-black text-xl font-bol">Hipopresivos</span>
+              <span className="text-black text-sm ">
+                Fortalece tu suelo pélvico
+              </span>
+            </div>
+          </div>
+        </div>
       </Carousel>
     </div>
   );
