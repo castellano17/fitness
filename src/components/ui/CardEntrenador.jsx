@@ -17,7 +17,11 @@ export function ProfileCard() {
           key={entrenador.id}
         >
           <CardHeader floated={false} className="h-80">
-            <img src={entrenador.img} alt={entrenador.name} />
+            <img
+              src={entrenador.img}
+              alt={entrenador.name}
+              className="w-auto object-cover "
+            />
           </CardHeader>
           <CardBody className="text-center">
             <Typography variant="h4" color="blue-gray" className="mb-2">

@@ -46,6 +46,6 @@ export const Entrenadores = [
     name: "John",
     description:
       "Con una sólida formación en fitness y entrenamiento personal, mi objetivo es ayudarte a alcanzar tus metas de bienestar de manera efectiva y sostenible. Mi enfoque se basa en la planificación cuidadosa y la adaptación constante para asegurarme de que obtengas los mejores resultados posibles.",
-    img: "/imagen/coach-12.png",
+    img: "/imagen/coach-12.jpg",
   },
 ];
