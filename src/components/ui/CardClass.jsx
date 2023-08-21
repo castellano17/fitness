@@ -11,20 +11,17 @@ import { Clases } from "../../utils/CardClases";
 
 export function CardDefault() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-5 h-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-5 h-auto max-w-[1024px] mx-auto ">
       {Clases.map((clase) => (
         <Card
           className="m-4 hover:bg-app-primary-accent transition-transform duration-300 transform hover:scale-105 "
           key={clase.id}
         >
-          <CardHeader
-            color="blue-gray"
-            className="relative h-auto flex justify-center items-center"
-          >
+          <CardHeader className="relative h-[200px]  flex justify-center items-center bg-app-primary-accent bg-opacity-50">
             <img
               src={clase.img}
               alt={clase.name}
-              className="w-auto object-cover "
+              className="object-fill  rounded-md"
             />
           </CardHeader>
           <CardBody>
@@ -33,7 +30,7 @@ export function CardDefault() {
             </Typography>
             <Typography>{clase.description}</Typography>
           </CardBody>
-          <CardFooter className="pt-0">
+          <CardFooter className="flex justify-center gap-7 pt-2">
             <Button className="bg-app-primary">Read More</Button>
           </CardFooter>
         </Card>

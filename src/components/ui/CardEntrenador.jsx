@@ -10,17 +10,20 @@ import { Entrenadores } from "../../utils/CardEntrenadores";
 
 export function ProfileCard() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-5 h-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-5 h-auto max-w-[1024px] mx-auto">
       {Entrenadores.map((entrenador) => (
         <Card
           className="m-4 hover:bg-app-primary-accent transition-transform duration-300 transform hover:scale-105 "
           key={entrenador.id}
         >
-          <CardHeader floated={false} className="h-80">
+          <CardHeader
+            floated={false}
+            className="relative h-[200px]  flex justify-center items-center bg-app-primary-accent bg-opacity-50"
+          >
             <img
               src={entrenador.img}
               alt={entrenador.name}
-              className="w-auto object-cover "
+              className="object-fill rounded-md "
             />
           </CardHeader>
           <CardBody className="text-center">
