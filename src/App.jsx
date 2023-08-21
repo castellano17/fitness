@@ -1,11 +1,25 @@
-import { Button } from "@material-tailwind/react";
 import "./App.css";
+import { NavbarLayout } from "./components/layout/navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
+import { FooterFitnezz } from "./components/layout/Footer";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-blue-500">Fitness</h1>
-      <Button>hola</Button>
+      <NavbarLayout />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+
+      <FooterFitnezz />
     </>
   );
 }
