@@ -3,7 +3,6 @@
 ---
 
 Página web de la empresa FITNEZZ,
-elaborada por la empresa: **Web Best Community**.
 
 Diseño y programación realizada por el Lic. Esmir Roque Castellano.
 
